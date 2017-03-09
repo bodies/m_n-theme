@@ -1,5 +1,21 @@
 <?php 
 
+function getTagList($p_id) {
+    if (get_the_tag($p_id)) {
+        echo '<div class="tags">' . __('Tags: ', 'm_n');
+        echo get_the_tag_list('', ' ', '', $p_id);
+        echo '</div>';
+    }
+}
+
+function getCategoryList($p_id) {
+    if (get_the_category($p_id)) {
+        echo '<div class="categories">'. __('Categories: ', 'm_n');
+        echo get_the_category_list(' ', '', $p_id);
+        echo '</div>';
+    }
+}
+
 function feedlove($content) {
 $content = $content . '<p class="extra"><a href="http://lessmade.com/themes/min" title="min theme" >A minimal wordpress theme by Jared Erickson</a></p>';
 return $content;

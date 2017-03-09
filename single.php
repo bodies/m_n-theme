@@ -8,6 +8,7 @@
 				<div class="entry">
 					<?php the_content(__('Read the rest of this post','m_n').' &raquo;'); ?>
 					<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages','m_n').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+    <?php getTagList(the_ID()); ?>
 				</div>
 			</div>
 		<?php comments_template(); ?>
