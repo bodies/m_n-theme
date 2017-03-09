@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m_n\n"
 "POT-Creation-Date: 2017-03-09 14:40+0900\n"
-"PO-Revision-Date: 2017-03-09 15:03+0900\n"
+"PO-Revision-Date: 2017-03-09 17:53+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -89,9 +89,8 @@ msgid "There is 1 comment in this article:"
 msgstr "1개의 댓글이 달렸습니다."
 
 #: comments.php:18
-#, fuzzy, php-format
 msgid "There are % comments in this article:"
-msgstr "이 글에 %개의 댓글이 달렸습니다"
+msgstr "댓글이 있습니다."
 
 #: comments.php:23
 msgid "Your comment will be published when it is approved."
@@ -99,7 +98,7 @@ msgstr "댓글은 관리자 승인 후 게시됩니다."
 
 #: comments.php:25 index.php:8 search.php:11 single.php:7
 msgid "m/j/Y"
-msgstr "Y. m. j"
+msgstr "Y. n. j"
 
 #: comments.php:42
 msgid "Comments are closed."

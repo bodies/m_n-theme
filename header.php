@@ -1,4 +1,4 @@
-<?php load_theme_textdomain('m_n'); ?>
+<?php load_theme_textdomain('m_n', get_template_directory() . '/languages'); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://gmpg.org/xfn/11">
