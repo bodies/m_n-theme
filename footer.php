@@ -1,5 +1,5 @@
 	<div id="footer">
-		<p><?php bloginfo('name'); ?> <?php _e('proudly powered by','min'); ?> <a href="http://www.wordpress.org" >Wordpress</a> <?php _e('and','min'); ?> <a href="http://jarederickson.com/2011/min-a-free-wordpress-minimal-theme/">min Theme</a></p>
+           <p><?php bloginfo('name'); ?>, <a href="http://www.wordpress.org" >Wordpress</a> | <a href="https://github.com/bodies/m_n-theme/">m_n</a></p>
 	</div><!-- close:footer -->
 </div><!-- close:wrapper -->
 <?php wp_footer(); ?>
