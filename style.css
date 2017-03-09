@@ -106,6 +106,20 @@ a.back { text-decoration: underline; }
 .entry ul li { margin: 0.3em 0; padding: 0; }
 .entry ol li { margin: 0.3em 0; padding: 0; }
 
+.entry .tags {
+    color: #a7a7a7;
+    font-size: 13px;
+    margin: 2em 0 0 0;
+}
+.entry .tags a { text-decoration: none; border-bottom:none; }
+.entry .tags a:link, .entry .tags a:visited {
+    color: #a7a7a7;
+}
+.entry .tags a:hover, .entry .tags a:active {
+    color: #555;
+    text-decoration: underline;
+}
+
 #comments { font-size: 0.95em; }
 .comment {
     background: #f0f0f0;

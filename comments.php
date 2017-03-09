@@ -15,7 +15,7 @@
 <!-- You can start editing here. -->
 <?php if ($comments) : ?>
 	<div id="comments">
-		<h3><?php comments_number(__('No comments yet.','m_n'), __('There is 1 comment in this article:','m_n'), __('There are % comments in this article:','m_n') );?></h3>
+		<h3><?php comments_number(__('No comments yet.','m_n'), __('There is 1 comment in this article:','m_n'), __("There are % comments in this article:",'m_n') );?></h3>
 		<ol>
 		<?php foreach ($comments as $comment) : ?>
 			<li id="comment-<?php comment_ID() ?>"  class="comment <?php if (get_comment_author_email() == get_the_author_meta('user_email')) { echo ('highlighted'); }?>">

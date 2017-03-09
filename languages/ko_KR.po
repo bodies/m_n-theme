@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: m_n\n"
-"POT-Creation-Date: 2017-03-09 14:40+0900\n"
-"PO-Revision-Date: 2017-03-09 18:10+0900\n"
+"POT-Creation-Date: 2017-03-10 01:20+0900\n"
+"PO-Revision-Date: 2017-03-10 01:22+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -86,11 +86,12 @@ msgstr "아직 댓글이 없습니다."
 
 #: comments.php:18
 msgid "There is 1 comment in this article:"
-msgstr "1개의 댓글이 달렸습니다."
+msgstr "댓글이 1개 있습니다."
 
 #: comments.php:18
+#, php-format
 msgid "There are % comments in this article:"
-msgstr "댓글이 있습니다."
+msgstr "댓글이 %개 있습니다."
 
 #: comments.php:23
 msgid "Your comment will be published when it is approved."
@@ -152,6 +153,14 @@ msgstr "웹사이트 (필수 아님)"
 msgid "comment"
 msgstr "댓글"
 
+#: functions.php:4
+msgid "Tags: "
+msgstr "태그: "
+
+#: functions.php:12
+msgid "Categories: "
+msgstr "분류: "
+
 #: header.php:6 search.php:5 search.php:23
 msgid "You searched for the following"
 msgstr "검색"
@@ -192,6 +201,6 @@ msgstr "검색"
 msgid "Pages"
 msgstr "페이지"
 
-#: single.php:15
+#: single.php:16
 msgid "Sorry, there are no posts about that."
 msgstr "죄송합니다. 관련된 글이 없습니다."

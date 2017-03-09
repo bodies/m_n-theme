@@ -1,9 +1,8 @@
 <?php 
-
 function getTagList($p_id) {
     if (get_the_tags($p_id)) {
         echo '<div class="tags">' . __('Tags: ', 'm_n');
-        echo get_the_tag_list('', ' ', '', $p_id);
+        echo get_the_tag_list('', ', ', '', $p_id);
         echo '</div>';
     }
 }
