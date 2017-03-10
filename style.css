@@ -49,8 +49,6 @@ body { background: #f7f7f7; }
     letter-spacing: 3px;
 }
 #header a { text-decoration: none; }
-#header a:link, #header a:visited { color: #000; text-shadow: 0 1px 2px #fff; }
-#header a:hover, #header a:active, #header a:focus { color: #3A525C; }
 #header h1 {
     font-size: 32px;
     font-weight: 600;
@@ -160,20 +158,21 @@ body { background: #f7f7f7; }
 #commentform p { font-size: 13px }
 
 #comments h3, #commentform h3 { color: #888; }
-.highlighted { border: 1px solid #f0f0f0;  }
+.highlighted { border: 1px solid #e7e7e7;  }
 .highlighted a:link, .highlighted a:visited { color: #09C }
 .comment .moderation { color: #FFF }
 
 .pagination {
     color: #a7a7a7;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    margin: -2.6em 0 4.6em 0;
+    margin: -2.6em 0.4em 4.6em 0.4em;
 }
 .pagination div { float: left; margin: 0 2em 0 0; }
 .pagination a {
     text-decoration: none;
     text-transform: uppercase;
+    /* text-shadow: 2px 2px 2px #ccc; */
 }
 .pagination a:link, .pagination a:visited { color: #a7a7a7; }
 .pagination a:hover, .pagination a:active, .pagination a:focus { color: #555; }
@@ -182,15 +181,14 @@ body { background: #f7f7f7; }
 #sb-1 { float: left; width: 45%; }
 #sb-2 { float: right; width: 45%; }
 
-#sidebar { font-size: 13px; color: #828282; padding: 0 0 7em 0; margin: 3em 0 0 0; }
+#sidebar { font-size: 14px; color: #888; padding: 0 0 6em 0; margin: 3em 0 0 0; }
+#sidebar h3 { font-size: 1.1em; }
 #sidebar a { text-decoration: none; }
-#sidebar a:link, #sidebar a:visited { color: #C4C4C4; }
-#sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #ccc; }
-#sidebar #sb-2 a:link, #sidebar #sb-2 a:visited { color: #C4C4C4; }
-#sidebar #sb-2 a:hover, #sidebar #sb-2 a:active, #sidebar #sb-2 a:focus { color: #CCC; }
+#sidebar a:link, #sidebar a:visited { color: #a7a7a7; }
+#sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #555; text-decoration:underline; }
 #sidebar .email { background: url(../img/ico-mail.gif) 0 4px no-repeat; padding: 0 0 0 1.8em; }
+#sidebar .tagcloud { width:95%; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
-
 
 #footer { color: #ccc; padding: 1em 0; font-size: 11px; }
 #footer p { margin: 0; }
