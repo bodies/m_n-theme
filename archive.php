@@ -22,7 +22,7 @@
     <?php } elseif (is_author()) { ?>
         <p class="string"><?php _e('Posts published by ','m_n'); ?></p>
         <a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
-    <?php } (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+    <?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
         <p class="string"><?php _e('Blog Archives','m_n'); ?></p>
         <a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
     <?php } ?>
