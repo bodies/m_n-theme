@@ -37,10 +37,10 @@ body { background: #f7f7f7; }
     line-height: 145%;
     margin: 0 auto;
     padding: 0 2em;
-    max-width: 640px;
+    max-width: 620px;
 }
 
-#header { margin: 0 0 -1em 0; padding: 5em 0 0 0; position: relative; }
+#header { margin: 0 0 -1em 0; padding: 4em 0 1em 0; position: relative; }
 #header .description {
     color: #c7c7c7;
     font-size: 13px;
@@ -69,7 +69,7 @@ body { background: #f7f7f7; }
 .post .number-of-comments a:link, .post .number-of-comments a:visited { color: #a7a7a7 }
 .post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color: #CCC }
 .post .vvqbox { margin: 2em auto; }
-.post .date { color: #c7c7c7; font-size: 12px; position: absolute; top: 0; right: 0; }
+.post .date { color: #c7c7c7; font-size: 12px; position: absolute; top: 0; right: 5px; }
 
 .post h2, .post h3, .post h4, .post h5 {
     color: #555;
@@ -192,11 +192,11 @@ body { background: #f7f7f7; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
 
 
-#footer { color: #aaa; padding: 1em 0; font-size: 11px; }
+#footer { color: #ccc; padding: 1em 0; font-size: 11px; }
 #footer p { margin: 0; }
 
 #footer a { text-decoration: none; }
-#footer a:link, #footer a:visited { color: #a7a7a7; }
+#footer a:link, #footer a:visited { color: #c7c7c7; }
 #footer a:hover, #footer a:active, #footer a:focus { color: #555; text-decoration: underline; }
 
 .footer-widget { margin-bottom: 1.5em; }
@@ -223,9 +223,7 @@ p.input-submit { text-align: right }
 #search-form #submit { padding: 1px 13px; margin: 0 0 0 5px; }
 #search h2, .emptysearch, .error { color: #888; margin:1em 0; }
 
-/*
-Thanks http://www.positioniseverything.net/easyclearing.html
-*/
+/* Thanks http://www.positioniseverything.net/easyclearing.html */
 .clearfix:after {
     content: "."; 
     display: block; 
@@ -241,10 +239,8 @@ Thanks http://www.positioniseverything.net/easyclearing.html
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
-
 /* Smartphones landscape */
 @media (max-width: 480px) {
-	
 	#wrapper { width: 380px; padding: 0 1em; }
 	#wrapper .post img { width:  100%; height: auto;}
 	
@@ -254,15 +250,12 @@ Thanks http://www.positioniseverything.net/easyclearing.html
 	 
 	 #sb-1 { width: 42%; }
 	 #sb-2 { width: 42%; }
-	
 }
 
 /* Smartphones horizontile */
 @media (max-width: 320px) {
-	
 	#wrapper { width: 280px; padding: 0 0.5em; }
 	#wrapper .post img { width:  100%; height: auto;}
 	#commentform textarea  { width: 260px; }
-	
 }
 

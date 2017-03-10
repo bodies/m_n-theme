@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: m_n\n"
-"POT-Creation-Date: 2017-03-10 20:00+0900\n"
-"PO-Revision-Date: 2017-03-10 20:01+0900\n"
+"POT-Creation-Date: 2017-03-10 20:02+0900\n"
+"PO-Revision-Date: 2017-03-10 20:25+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -31,19 +31,19 @@ msgstr "다시 검색하거나 글 분류를 이용하세요."
 
 #: archive.php:8
 msgid "Posts categorized in "
-msgstr ""
+msgstr "분류: "
 
 #: archive.php:11
 msgid "Posts tagged with "
-msgstr ""
+msgstr "태그: "
 
 #: archive.php:14 archive.php:17 archive.php:20
 msgid "Posts published on"
-msgstr ""
+msgstr "발행일: "
 
 #: archive.php:23
 msgid "Posts published by "
-msgstr ""
+msgstr "작성자: "
 
 #: archive.php:26
 msgid "Blog Archives"
@@ -94,7 +94,6 @@ msgid "There is 1 comment in this article:"
 msgstr "댓글이 1개 있습니다."
 
 #: comments.php:18
-#, php-format
 msgid "There are % comments in this article:"
 msgstr "댓글이 %개 있습니다."
 
@@ -104,7 +103,7 @@ msgstr "댓글은 관리자 승인 후 게시됩니다."
 
 #: comments.php:25
 msgid "m/j/Y G:i"
-msgstr ""
+msgstr "Y. n. j G:i"
 
 #: comments.php:42
 msgid "Comments are closed."
@@ -112,7 +111,7 @@ msgstr "댓글이 닫혔습니다."
 
 #: comments.php:48
 msgid "Write a comment"
-msgstr "댓글을 써주세요."
+msgstr "댓글을 남겨주세요"
 
 #: comments.php:50
 msgid "You have to"
@@ -156,7 +155,7 @@ msgstr "웹사이트 (필수 아님)"
 
 #: comments.php:73
 msgid "comment"
-msgstr "댓글"
+msgstr "댓글 쓰기"
 
 #: functions.php:4
 msgid "Tags: "
