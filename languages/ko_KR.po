@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: m_n\n"
-"POT-Creation-Date: 2017-03-10 01:20+0900\n"
-"PO-Revision-Date: 2017-03-10 01:22+0900\n"
+"POT-Creation-Date: 2017-03-10 20:00+0900\n"
+"PO-Revision-Date: 2017-03-10 20:01+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -19,8 +19,9 @@ msgstr ""
 msgid "The page you are looking for doesn't exist. Sorry."
 msgstr "죄송합니다. 찾는 페이지가 존재하지 않습니다. "
 
-#: 404.php:5 archive.php:8 archive.php:11 archive.php:14 archive.php:17
-#: archive.php:20 archive.php:23 index.php:22 search.php:6 search.php:24
+#: 404.php:5 archive.php:9 archive.php:12 archive.php:15 archive.php:18
+#: archive.php:21 archive.php:24 archive.php:27 index.php:22 search.php:6
+#: search.php:24
 msgid "Back home"
 msgstr "돌아가기"
 
@@ -28,47 +29,51 @@ msgstr "돌아가기"
 msgid "Try a different search or look in the categories below."
 msgstr "다시 검색하거나 글 분류를 이용하세요."
 
-#: archive.php:7
-msgid "Archived posts in "
+#: archive.php:8
+msgid "Posts categorized in "
 msgstr ""
 
-#: archive.php:10
-msgid "Archive of published articles on"
+#: archive.php:11
+msgid "Posts tagged with "
 msgstr ""
 
-#: archive.php:13 archive.php:16
-msgid "Archive of published posts on"
-msgstr "다음 날짜에 공개된 글: "
+#: archive.php:14 archive.php:17 archive.php:20
+msgid "Posts published on"
+msgstr ""
 
-#: archive.php:19
-msgid "Archive of published posts by "
-msgstr "다음 사용자의 글 목록: "
+#: archive.php:23
+msgid "Posts published by "
+msgstr ""
 
-#: archive.php:22
+#: archive.php:26
 msgid "Blog Archives"
 msgstr "글 목록"
 
-#: archive.php:30 single.php:9
+#: archive.php:33 index.php:8 search.php:11 single.php:7
+msgid "m/j/Y"
+msgstr "Y. n. j"
+
+#: archive.php:35 single.php:9
 msgid "Read the rest of this post"
 msgstr "이 글 더 읽기"
 
-#: archive.php:32 index.php:13 search.php:15
+#: archive.php:37 index.php:13 search.php:15
 msgid "No Comments"
 msgstr "댓글 없음"
 
-#: archive.php:32 index.php:13 search.php:15
+#: archive.php:37 index.php:13 search.php:15
 msgid "1 Comment"
 msgstr "댓글 1개"
 
-#: archive.php:32 index.php:13 search.php:15
+#: archive.php:37 index.php:13 search.php:15
 msgid "% Comments"
 msgstr "댓글 %개"
 
-#: archive.php:36 index.php:17 search.php:19
+#: archive.php:42 index.php:17 search.php:19
 msgid "Previous posts"
 msgstr "이전 글"
 
-#: archive.php:37 index.php:18 search.php:20
+#: archive.php:43 index.php:18 search.php:20
 msgid "Newer posts"
 msgstr "다음 글"
 
@@ -97,9 +102,9 @@ msgstr "댓글이 %개 있습니다."
 msgid "Your comment will be published when it is approved."
 msgstr "댓글은 관리자 승인 후 게시됩니다."
 
-#: comments.php:25 index.php:8 search.php:11 single.php:7
-msgid "m/j/Y"
-msgstr "Y. n. j"
+#: comments.php:25
+msgid "m/j/Y G:i"
+msgstr ""
 
 #: comments.php:42
 msgid "Comments are closed."
@@ -204,3 +209,9 @@ msgstr "페이지"
 #: single.php:16
 msgid "Sorry, there are no posts about that."
 msgstr "죄송합니다. 관련된 글이 없습니다."
+
+#~ msgid "Archive of published posts on"
+#~ msgstr "다음 날짜에 공개된 글: "
+
+#~ msgid "Archive of published posts by "
+#~ msgstr "다음 사용자의 글 목록: "

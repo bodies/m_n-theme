@@ -23,10 +23,12 @@ a.back { text-decoration: underline; }
 .back:link, .back:visited { color: #f60; }
 .back:hover, .back:active, .back:focus { color: #3A525C; }
 
+.wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 
 /********************************************
 	Layout
 *********************************************/
+body { background: #f7f7f7; }
 
 #wrapper {
     color: #333;
@@ -97,9 +99,18 @@ a.back { text-decoration: underline; }
 
 .entry p { line-height: 1.6em; }
 .entry a { padding-bottom:1px; }
-.entry a:link, .entry a:visited .comment a:link, .comment a:visited { color: #333; border-bottom: 1px dashed #888; }
+.entry a:link, .entry a:visited, .comment a:link, .comment a:visited { color: #333; border-bottom: 1px dashed #888; }
 .entry a:hover, .entry a:active, .comment a:hover, .comment a:active { color: #000; border-bottom: 1px solid #555; }
-.entry .more-link { font-size: 12px; }
+.entry a.more-link {
+    display: block;
+    font-size: 13px;
+    border: none;
+    margin-top: 1em;
+    padding-bottom: 0;
+}
+.entry a.more-link:hover, .entry a.more-link:active {
+    text-decoration: underline;
+}
 
 .entry ul { list-style: circle; margin-left: 1em; padding: 0 1em; }
 .entry ol { list-style: decimal; margin-left: 1em; padding: 0 1em; }
@@ -129,7 +140,15 @@ a.back { text-decoration: underline; }
     overflow: hidden;
     border: 1px solid #e7e7e7;
 }
-.comment .date { color: #c7c7c7; font-size: 0.9em; font-weight: normal; bottom: 1em; position: absolute; right: 1em; }
+.comment .date {
+    color: #c7c7c7;
+    font-size: 12px;
+    font-weight: normal;
+    bottom: 1em;
+    position: absolute;
+    right: 1em;
+    letter-spacing: -1px;
+}
 .comment cite { color: #888; font-style: 600; font-style: italic; }
 .comment cite a { text-decoration: none; }
 #commentform { margin: 2.3em 0 4.6em 0; padding: 0; }
@@ -163,7 +182,7 @@ a.back { text-decoration: underline; }
 #sb-1 { float: left; width: 45%; }
 #sb-2 { float: right; width: 45%; }
 
-#sidebar { font-size: 13px; color: #828282; padding: 0 0 7em 0; margin: 4em 0 0 0; }
+#sidebar { font-size: 13px; color: #828282; padding: 0 0 7em 0; margin: 3em 0 0 0; }
 #sidebar a { text-decoration: none; }
 #sidebar a:link, #sidebar a:visited { color: #C4C4C4; }
 #sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #ccc; }
@@ -189,9 +208,9 @@ a.back { text-decoration: underline; }
 .input-text, textarea {
     color: #555;
     background: #fff;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, sans-serif;
-    padding: .3em;
+    padding: .375em;
     border: 1px solid #e7e7e7;
 }
 
@@ -199,8 +218,8 @@ label { font-size: 1em; margin: 0 .5em; }
 #search-form label { position: absolute; top: -99999px; }
 p.input-submit { text-align: right }
 #commentform input { width: 43% }
-#commentform textarea { font-size: 1em; width: 560px; }
-#commentform #submit-comment { width: auto; font-size: 14px; border: 0; padding: 5px; background: #3A525C; color: #fff; }
+#commentform textarea { font-size: 1em; width: 98%; }
+#commentform #submit-comment { width: 120px; font-size: 14px; border: 0; padding: 8px; background: #3A525C; color: #fff; margin-right:10px; }
 #search-form #submit { padding: 1px 13px; margin: 0 0 0 5px; }
 #search h2, .emptysearch, .error { color: #888; margin:1em 0; }
 
