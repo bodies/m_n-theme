@@ -223,7 +223,7 @@ p.input-submit { text-align: right }
 #commentform textarea { font-size: 1em; width: 98%; }
 #commentform #submit-comment { width: 120px; font-size: 14px; border: 0; padding: 8px; background: #3A525C; color: #fff; margin-right:10px; }
 #search-form #submit { padding: 1px 13px; margin: 0 0 0 5px; }
-#search h2, .emptysearch, .error { color: #888; margin:1em 0; }
+#search h2, .emptysearch, .error { color: #888; margin:2em 0; }
 
 /* Thanks http://www.positioniseverything.net/easyclearing.html */
 .clearfix:after {

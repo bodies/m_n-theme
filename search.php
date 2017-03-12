@@ -2,8 +2,9 @@
 	<div id="content">
 		<div id="main-content">
 	<?php if (have_posts()) : ?>
-		<p class="page-header"><?php _e('You searched for the following','m_n'); ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
-		<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
+		<p class="page-header">
+            <h1 class="page-title"><?php _e('You searched','m_n'); ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</h1>
+        </p>
 		<h2 class="error"><?php _e('Search results','m_n'); ?></h2>
 		<?php while (have_posts()) : the_post(); ?>
 		<div class="post"  id="post-<?php the_ID(); ?>">
@@ -21,7 +22,6 @@
 		</div>
 	<?php else : ?>
 		<p class="page-header"><?php _e('You searched for the following','m_n') ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
-		<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
 		<h2 class="error"><?php _e('We didn\'t find anything. Try a different search or look in the categories below.','m_n'); ?></h2>
 	<?php endif; ?>
 		</div>

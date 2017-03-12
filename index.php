@@ -19,7 +19,6 @@
 			</div>
 		<?php else : ?>
 			<p class="page-header"><?php _e('You broke the interwebs... wow... way to go.. no really you may want to call someone to take a look at it..','m_n'); ?></p>
-			<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
 		<?php endif; ?>
 		</div><!-- close:main-content -->
 		<?php get_sidebar(); ?>
