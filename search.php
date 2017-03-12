@@ -21,7 +21,9 @@
 			<div class="next"><?php previous_posts_link(__('Newer posts','m_n').' &raquo;') ?></div>
 		</div>
 	<?php else : ?>
-		<p class="page-header"><?php _e('You searched for the following','m_n') ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
+		<p class="page-header">
+            <h1 classs="page-title"><?php _e('You searched for the following','m_n') ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</h1>
+        </p>
 		<h2 class="error"><?php _e('We didn\'t find anything. Try a different search or look in the categories below.','m_n'); ?></h2>
 	<?php endif; ?>
 		</div>
