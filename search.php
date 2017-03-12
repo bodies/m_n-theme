@@ -2,7 +2,7 @@
 	<div id="content">
 		<div id="main-content">
 	<?php if (have_posts()) : ?>
-		<p class="string"><?php _e('You searched for the following','m_n'); ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
+		<p class="page-header"><?php _e('You searched for the following','m_n'); ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
 		<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
 		<h2 class="error"><?php _e('Search results','m_n'); ?></h2>
 		<?php while (have_posts()) : the_post(); ?>
@@ -20,7 +20,7 @@
 			<div class="next"><?php previous_posts_link(__('Newer posts','m_n').' &raquo;') ?></div>
 		</div>
 	<?php else : ?>
-		<p class="string"><?php _e('You searched for the following','m_n') ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
+		<p class="page-header"><?php _e('You searched for the following','m_n') ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
 		<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
 		<h2 class="error"><?php _e('We didn\'t find anything. Try a different search or look in the categories below.','m_n'); ?></h2>
 	<?php endif; ?>

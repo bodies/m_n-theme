@@ -14,7 +14,7 @@
 			</div>
 		<?php comments_template(); ?>
 		<?php endwhile; else: ?>
-			<p class="string"><?php _e('Sorry, there are no posts about that.','m_n'); ?></p>
+			<p class="page-header"><?php _e('Sorry, there are no posts about that.','m_n'); ?></p>
 	<?php endif; ?>
 		</div>
 		<?php get_sidebar(); ?>
