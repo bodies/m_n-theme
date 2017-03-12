@@ -104,13 +104,8 @@ body { background: #f7f7f7; }
 .entry a:link, .entry a:visited, .comment a:link, .comment a:visited { color: #333; border-bottom: 1px dashed #888; }
 .entry a:hover, .entry a:active, .comment a:hover, .comment a:active { color: #000; border-bottom: 1px solid #555; }
 
-.entry .more {
-    padding:1em 0.4em;
-}
-
-.entry a.more-link {
-    font-size: 14px;
-}
+.entry .more { padding:1em 0em; }
+.entry a.more-link { font-size: 0.9em; }
 .entry a.more-link:hover, .entry a.more-link:active {
 }
 
@@ -167,29 +162,31 @@ body { background: #f7f7f7; }
 .comment .moderation { color: #FFF }
 
 .pagination {
-    color: #a7a7a7;
-    font-size: 15px;
+    color: #999;
+    font-size: 16px;
     font-weight: 600;
     margin: -2.6em 0.4em 4.6em 0.4em;
 }
 .pagination div { float: left; margin: 0 2em 0 0; }
+.pagination .prev { float: left; margin: 0 0 0 1em; }
+.pagination .next { float: right; margin: 0 1em 0 0; }
 .pagination a {
     text-decoration: none;
     text-transform: uppercase;
-    /* text-shadow: 2px 2px 2px #ccc; */
+    text-shadow: 2px 2px 2px #ccc;
 }
-.pagination a:link, .pagination a:visited { color: #a7a7a7; }
-.pagination a:hover, .pagination a:active, .pagination a:focus { color: #555; }
+.pagination a:link, .pagination a:visited { color: #555; }
+.pagination a:hover, .pagination a:active, .pagination a:focus { color: #333; text-decoration: underline; }
 
 
 #sb-1 { float: left; width: 45%; }
 #sb-2 { float: right; width: 45%; }
 
-#sidebar { font-size: 1em; color: #888; padding: 0 0 6em 0; margin: 3em 0 0 0; }
+#sidebar { font-size: 1em; color: #555; padding: 0 0 6em 0; margin: 3em 0 0 0; }
 #sidebar h3 { font-size: 1.15em; margin-bottom: 2px; }
 #sidebar li { margin-bottom: 2px; }
 #sidebar a { text-decoration: none; }
-#sidebar a:link, #sidebar a:visited { color: #999; }
+#sidebar a:link, #sidebar a:visited { color: #888; }
 #sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #555; text-decoration:underline; }
 #sidebar .email { background: url(../img/ico-mail.gif) 0 4px no-repeat; padding: 0 0 0 1.8em; }
 #sidebar .tagcloud { width:95%; }
