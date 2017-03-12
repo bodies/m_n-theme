@@ -65,7 +65,7 @@ body { background: #f7f7f7; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
 .post img { max-width: 100%; height: auto; }
 .post img.alignright { float: right; margin: 0 1em 1em 1em; }
-.post img.alignleft { float: left; margin: 0 1em 1em 1em ;
+.post img.alignleft { float: left; margin: 0 1em 1em 1em ; }
 .post .number-of-comments a:link, .post .number-of-comments a:visited { color: #a7a7a7 }
 .post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color: #CCC }
 .post .vvqbox { margin: 2em auto; }
@@ -105,6 +105,7 @@ body { background: #f7f7f7; }
 .entry .more {
     padding:1em 0.4em;
 }
+
 .entry a.more-link {
     font-size: 14px;
 }
