@@ -18,7 +18,7 @@ Text Domain: m_n
 p { margin: 1em 0; }
 h1 { font-size: 25px; font-weight: normal; }
 a.back { text-decoration: underline; }
-#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, sans-serif; font-size: 18px; font-weight: normal; }
+#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif; font-size: 18px; font-weight: normal; }
 
 .back:link, .back:visited { color: #f60; }
 .back:hover, .back:active, .back:focus { color: #3A525C; }
@@ -32,7 +32,7 @@ body { background: #f7f7f7; }
 
 #wrapper {
     color: #333;
-    font-family: "Lucida Grande", Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, sans-serif;
+    font-family: "Lucida Grande", Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif;
     font-size: 15px;
     line-height: 145%;
     margin: 0 auto;
@@ -64,6 +64,8 @@ body { background: #f7f7f7; }
 .post img.attachment-post-thumbnail { float: left; margin: 0 2em 2em 0; padding: 0; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
 .post img { max-width: 100%; height: auto; }
+.post img.alignright { float: right; margin: 0 1em 1em 1em; }
+.post img.alignleft { float: left; margin: 0 1em 1em 1em ;
 .post .number-of-comments a:link, .post .number-of-comments a:visited { color: #a7a7a7 }
 .post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color: #CCC }
 .post .vvqbox { margin: 2em auto; }
@@ -72,7 +74,7 @@ body { background: #f7f7f7; }
 .post h2, .post h3, .post h4, .post h5 {
     color: #555;
     font-weight: 600;
-    font-family: Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, sans-serif;
+    font-family: Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif;
     line-height: 120%;
 }
 .post h2 {
@@ -82,8 +84,8 @@ body { background: #f7f7f7; }
 }
 .post h2 a:link, .post h2 a:visited { color: #555; }
 .post h2 a:hover, .post h2 a:active, .post h2 a:focus { color: #333; }
-.post h3 { font-size: 18px; margin: 1.4em 0 0.6em 0; }
-.post h4 { font-size: 15px; margin: 1.2em 0 1em 0; }
+.post h3 { font-size: 18px; margin: 2em 0 0.6em 0; }
+.post h4 { font-size: 15px; margin: 1.6em 0 1em 0; }
 .post h5 { font-size: 13px; margin: 2em 0 1em 0; }
 .post blockquote cite { font-style: normal; }
 
@@ -95,19 +97,18 @@ body { background: #f7f7f7; }
 .post blockquote { color: #fff; background: #878787; margin: 2em; padding: .1em 1.5em; position: relative; }
 .post blockquote cite { display: block; text-align: right; }
 
-.entry p { line-height: 1.6em; }
+.entry p { line-height: 1.7em; }
 .entry a { padding-bottom:1px; }
 .entry a:link, .entry a:visited, .comment a:link, .comment a:visited { color: #333; border-bottom: 1px dashed #888; }
 .entry a:hover, .entry a:active, .comment a:hover, .comment a:active { color: #000; border-bottom: 1px solid #555; }
+
+.entry .more {
+    padding:1em 0.4em;
+}
 .entry a.more-link {
-    display: block;
-    font-size: 13px;
-    border: none;
-    margin-top: 1em;
-    padding-bottom: 0;
+    font-size: 14px;
 }
 .entry a.more-link:hover, .entry a.more-link:active {
-    text-decoration: underline;
 }
 
 .entry ul { list-style: circle; margin-left: 1em; padding: 0 1em; }
@@ -207,7 +208,7 @@ body { background: #f7f7f7; }
     color: #555;
     background: #fff;
     font-size: 14px;
-    font-family: Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, sans-serif;
+    font-family: Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif;
     padding: .375em;
     border: 1px solid #e7e7e7;
 }

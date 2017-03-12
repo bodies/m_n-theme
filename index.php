@@ -8,7 +8,7 @@
 					<span class="date"><?php the_time(__('m/j/Y','m_n')) ?></span>
 					<div class="clearfix"></div>
 					<div class="entry">
-						<?php the_content(__('Continue Reading','m_n').' &raquo;'); ?>
+						<?php the_content('<p class="more">'.__('Continue Reading','m_n').' &raquo;</p>'); ?>
 					</div>
 					<span class="number-of-comments"><a href="<?php the_permalink() ?>#comments" title="title"><?php comments_number(__('No Comments','m_n'), __('1 Comment','m_n'), __('% Comments','m_n'));?></a></span>
 				</div><!-- close:post -->
