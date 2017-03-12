@@ -71,7 +71,7 @@ body { background: #f7f7f7; }
 .post .number-of-comments a:link, .post .number-of-comments a:visited { color: #a7a7a7 }
 .post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color: #CCC }
 .post .vvqbox { margin: 2em auto; }
-.post .date { color: #c7c7c7; font-size: 12px; position: absolute; top: 0; right: 5px; }
+.post .date { color: #c7c7c7; font-size: 12px; position: absolute; top: 0; right: 10px; }
 
 .post h2, .post h3, .post h4, .post h5 {
     color: #555;
@@ -168,8 +168,8 @@ body { background: #f7f7f7; }
     margin: -2.6em 0.4em 4.6em 0.4em;
 }
 .pagination div { float: left; margin: 0 2em 0 0; }
-.pagination .prev { float: left; margin: 0 0 0 1em; }
-.pagination .next { float: right; margin: 0 1em 0 0; }
+.pagination .prev { float: left; margin: 0 0 0 5px; }
+.pagination .next { float: right; margin: 0 1em 0 5px; }
 .pagination a {
     text-decoration: none;
     text-transform: uppercase;

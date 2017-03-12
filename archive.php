@@ -11,7 +11,7 @@
 	        <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		    <span class="date"><?php the_time(__('m/j/Y','m_n')) ?></span>
 			<div class="entry">
-				<?php the_content(__('Read the rest of this post','m_n').' &raquo;'); ?>
+				<?php the_content('<div class="more">'.__('Continue Reading','m_n').' &raquo;</div>'); ?>
 			</div>
 			<span class="number-of-comments"><a href="<?php the_permalink() ?>#comments" title="title"><?php comments_number(__('No Comments','m_n'), __('1 Comment','m_n'), __('% Comments','m_n'));?></a></span>
 		</div>
