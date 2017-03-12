@@ -4,6 +4,11 @@
 <?php if (have_posts()) : ?>
     <?php $post = $posts[0]; /* Hack. Set $post so that the_date() works. */ ?>
 
+        <div class="page-header">
+            <?php
+            the_archive_title('<h1 class="page-title">', '</h1>');
+            ?>
+        </div>
     <?php if (is_category()) { ?>
         <p class="string"><?php _e('Posts categorized in ','m_n'); ?><strong><?php echo single_cat_title(); ?></strong></p>
         <a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','m_n'); ?></a>
