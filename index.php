@@ -6,7 +6,6 @@
 				<div class="post" id="post-<?php the_ID(); ?>">
 					<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 					<span class="date"><?php the_time(__('m/j/Y','m_n')) ?></span>
-					<div class="clearfix"></div>
 					<div class="entry">
 						<?php the_content('<div class="more">'.__('Continue Reading','m_n').' &raquo;</div>'); ?>
 					</div>

@@ -185,14 +185,16 @@ body { background: #f7f7f7; }
 #sb-1 { float: left; width: 45%; }
 #sb-2 { float: right; width: 45%; }
 
-#sidebar { font-size: 14px; color: #888; padding: 0 0 6em 0; margin: 3em 0 0 0; }
-#sidebar h3 { font-size: 1.1em; }
+#sidebar { font-size: 1em; color: #888; padding: 0 0 6em 0; margin: 3em 0 0 0; }
+#sidebar h3 { font-size: 1.15em; margin-bottom: 2px; }
+#sidebar li { margin-bottom: 2px; }
 #sidebar a { text-decoration: none; }
-#sidebar a:link, #sidebar a:visited { color: #a7a7a7; }
+#sidebar a:link, #sidebar a:visited { color: #999; }
 #sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #555; text-decoration:underline; }
 #sidebar .email { background: url(../img/ico-mail.gif) 0 4px no-repeat; padding: 0 0 0 1.8em; }
 #sidebar .tagcloud { width:95%; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
+#sidebar .cat-item { color: #ccc; }
 
 #footer { color: #ccc; padding: 1em 0; font-size: 11px; }
 #footer p { margin: 0; }
