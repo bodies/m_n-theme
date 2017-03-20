@@ -248,8 +248,8 @@ p.input-submit { text-align: right }
 @media (max-width: 480px) {
 	#wrapper { width: 380px; padding: 0 1em; }
 	#commentform textarea  { width: 380px; }
-	#search-form #submit { padding:1px 3px; }
-	#search-form .input-text { max-width:60%; }
+	#search-form #submit { padding:1px 3px; margin-left: 2px; }
+	#search-form .input-text { max-width:50%; }
 	#sb-1 { width: 42%; }
 	#sb-2 { width: 42%; }
 }
@@ -262,6 +262,5 @@ p.input-submit { text-align: right }
 /* Smartphones horizontile */
 @media (max-width: 320px) {
 	#wrapper { width: 280px; padding: 0 0.5em; }
-	#commentform textarea  { width: 260px; }
+	#commentform textarea  { width: 280px; }
 }
-
