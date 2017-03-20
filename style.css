@@ -9,7 +9,6 @@ Text Domain: m_n
 */
 
 @import "css/reset.css";
-@import "css/forms.css";
 
 /********************************************
 	Typography
@@ -239,23 +238,30 @@ p.input-submit { text-align: right }
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
+/* Plugin: Clean My Archives */
+.clean-my-archives h2 {
+    font-size: 1.4em;
+    margin: 1em 0 0.4em 0;
+}
+
 /* Smartphones landscape */
 @media (max-width: 480px) {
 	#wrapper { width: 380px; padding: 0 1em; }
-	#wrapper .post img { width:  100%; height: auto;}
-	
-	.post .date { right: auto; left: 0; }
-	
-	 #commentform textarea  { width: 380px; }
-	 
-	 #sb-1 { width: 42%; }
-	 #sb-2 { width: 42%; }
+	#commentform textarea  { width: 380px; }
+	#search-form #submit { padding:1px 3px; }
+	#search-form .input-text { max-width:60%; }
+	#sb-1 { width: 42%; }
+	#sb-2 { width: 42%; }
+}
+
+@media (max-width: 380px) {
+	#wrapper { width:320px; padding: 0 0.8em; }
+	#commentform textarea { width: 320px; }
 }
 
 /* Smartphones horizontile */
 @media (max-width: 320px) {
 	#wrapper { width: 280px; padding: 0 0.5em; }
-	#wrapper .post img { width:  100%; height: auto;}
 	#commentform textarea  { width: 260px; }
 }
 
