@@ -23,6 +23,7 @@ a.back { text-decoration: underline; }
 .back:hover, .back:active, .back:focus { color: #3A525C; }
 
 .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
+.aligncenter { margin: 0 auto; }
 
 /********************************************
 	Layout
@@ -79,14 +80,14 @@ body { background: #f7f7f7; }
     line-height: 120%;
 }
 .post h2 {
-    font-size: 25px;
-    margin-bottom: 0.8em;
+    font-size: 24px;
+    margin-bottom: 1em;
     text-decoration: none;
 }
 .post h2 a:link, .post h2 a:visited { color: #555; }
 .post h2 a:hover, .post h2 a:active, .post h2 a:focus { color: #333; }
 .post h3 { font-size: 18px; margin: 2em 0 0.6em 0; }
-.post h4 { font-size: 15px; margin: 1.6em 0 1em 0; }
+.post h4 { font-size: 16px; margin: 1.8em 0 0.8em 0; }
 .post h5 { font-size: 13px; margin: 2em 0 1em 0; }
 .post blockquote cite { font-style: normal; }
 
@@ -185,8 +186,8 @@ body { background: #f7f7f7; }
 #sidebar h3 { font-size: 1.15em; margin-bottom: 2px; }
 #sidebar li { margin-bottom: 2px; }
 #sidebar a { text-decoration: none; }
-#sidebar a:link, #sidebar a:visited { color: #888; }
-#sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #555; text-decoration:underline; }
+#sidebar a:link, #sidebar a:visited { color: #666; }
+#sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #333; text-decoration:underline; }
 #sidebar .email { background: url(../img/ico-mail.gif) 0 4px no-repeat; padding: 0 0 0 1.8em; }
 #sidebar .tagcloud { width:95%; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
