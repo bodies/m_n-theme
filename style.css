@@ -17,7 +17,7 @@ Text Domain: m_n
 p { margin: 1em 0; }
 h1 { font-size: 25px; font-weight: normal; }
 a.back { text-decoration: underline; }
-#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif; font-size: 18px; font-weight: normal; }
+#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 18px; font-weight: normal; }
 
 .back:link, .back:visited { color: #f60; }
 .back:hover, .back:active, .back:focus { color: #3A525C; }
@@ -25,19 +25,22 @@ a.back { text-decoration: underline; }
 .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .aligncenter { margin: 0 auto; }
 
+a:link, a:visited { color:#333; }
+a:active, a:hover, a:focus { color:#ff4500; }
+
 /********************************************
 	Layout
 *********************************************/
-body { background: #f7f7f7; }
+body { background: #f9f9f9; }
 
 #wrapper {
     color: #333;
-    font-family: "Lucida Grande", Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif;
-    font-size: 15px;
-    line-height: 145%;
+    font-family: "Lucida Grande", Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
     margin: 0 auto;
     padding: 0 2em;
-    max-width: 620px;
+    max-width: 600px;
 }
 
 #header { margin: 0 0 -1em 0; padding: 4em 0 1em 0; position: relative; }
@@ -57,9 +60,7 @@ body { background: #f7f7f7; }
     color: #555;
     text-shadow: 2px 2px 2px #ccc;
 }
-#header h1 a:hover, #header h1 a:active {
-    color: #333;
-}
+#header h1 a:hover, #header h1 a:active { }
 
 .page-header { margin: 2.6em 0 -1em 0; }
 .post { margin: 4.6em 0; padding: 2em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
@@ -76,7 +77,7 @@ body { background: #f7f7f7; }
 .post h2, .post h3, .post h4, .post h5 {
     color: #555;
     font-weight: 600;
-    font-family: Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif;
+    font-family: Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     line-height: 120%;
 }
 .post h2 {
@@ -85,24 +86,25 @@ body { background: #f7f7f7; }
     text-decoration: none;
 }
 .post h2 a:link, .post h2 a:visited { color: #555; }
-.post h2 a:hover, .post h2 a:active, .post h2 a:focus { color: #333; }
+.post h2 a:hover, .post h2 a:active, .post h2 a:focus { }
 .post h3 { font-size: 18px; margin: 2em 0 0.6em 0; }
-.post h4 { font-size: 16px; margin: 1.8em 0 0.8em 0; }
+.post h4 { font-size: 16px; margin: 1.8em 0 0.6em 0; }
 .post h5 { font-size: 13px; margin: 2em 0 1em 0; }
 .post blockquote cite { font-style: normal; }
 
-.post .number-of-comments { position: absolute; right: 1em; }
-.post .number-of-comments a { text-decoration: underline; font-size: 13px; }
-.post .number-of-comments a:link, .post .number-of-comments a:visited { color: #c7c7c7; }
-.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color: #555; }
+.post .number-of-comments { position: absolute; right: 1em; font-weight:600; }
+.post .number-of-comments a { font-size: 13px; }
+.post .number-of-comments a:link, .post .number-of-comments a:visited { color:#555; }
+.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus {  }
 
 .post blockquote { color: #fff; background: #878787; margin: 2em; padding: .1em 1.5em; position: relative; }
 .post blockquote cite { display: block; text-align: right; }
 
-.entry p { line-height: 1.7em; }
+.entry p { line-height: 1.9em; }
+
 .entry a { padding-bottom:1px; }
-.entry a:link, .entry a:visited, .comment a:link, .comment a:visited { color: #333; border-bottom: 1px dashed #888; }
-.entry a:hover, .entry a:active, .comment a:hover, .comment a:active { color: #000; border-bottom: 1px solid #555; }
+.entry a:link, .entry a:visited, .comment a:link, .comment a:visited { border-bottom: 2px dashed #d7d7d7; }
+.entry a:hover, .entry a:active, .comment a:hover, .comment a:active { border-bottom: 2px solid #ff4500; }
 
 .entry .more { padding:1em 0em; }
 .entry a.more-link { font-size: 0.9em; }
@@ -111,8 +113,7 @@ body { background: #f7f7f7; }
 
 .entry ul { list-style: circle; margin-left: 1em; padding: 0 1em; }
 .entry ol { list-style: decimal; margin-left: 1em; padding: 0 1em; }
-.entry ul li { margin: 0.3em 0; padding: 0; }
-.entry ol li { margin: 0.3em 0; padding: 0; }
+.entry ul li, entry ol li { margin: 0.3em 0; padding:0 0 2px 0; }
 
 .entry .tags {
     color: #a7a7a7;
@@ -176,7 +177,7 @@ body { background: #f7f7f7; }
     text-shadow: 2px 2px 2px #ccc;
 }
 .pagination a:link, .pagination a:visited { color: #555; }
-.pagination a:hover, .pagination a:active, .pagination a:focus { color: #333; text-decoration: underline; }
+.pagination a:hover, .pagination a:active, .pagination a:focus { }
 
 
 #sb-1 { float: left; width: 45%; }
@@ -187,7 +188,7 @@ body { background: #f7f7f7; }
 #sidebar li { margin-bottom: 2px; }
 #sidebar a { text-decoration: none; }
 #sidebar a:link, #sidebar a:visited { color: #666; }
-#sidebar a:hover, #sidebar a:active, #sidebar a:focus { color: #333; text-decoration:underline; }
+#sidebar a:hover, #sidebar a:active, #sidebar a:focus { }
 #sidebar .email { background: url(../img/ico-mail.gif) 0 4px no-repeat; padding: 0 0 0 1.8em; }
 #sidebar .tagcloud { width:95%; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
@@ -198,7 +199,7 @@ body { background: #f7f7f7; }
 
 #footer a { text-decoration: none; }
 #footer a:link, #footer a:visited { color: #c7c7c7; }
-#footer a:hover, #footer a:active, #footer a:focus { color: #555; text-decoration: underline; }
+#footer a:hover, #footer a:active, #footer a:focus { }
 
 .footer-widget { margin-bottom: 1.5em; }
 
@@ -210,7 +211,7 @@ body { background: #f7f7f7; }
     color: #555;
     background: #fff;
     font-size: 14px;
-    font-family: Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", NanumGothic, sans-serif;
+    font-family: Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     padding: .375em;
     border: 1px solid #e7e7e7;
 }
