@@ -16,7 +16,7 @@ Text Domain: m_n
 
 p { margin: 1em 0; }
 
-#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothic, NanumGothicOTF, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 18px; font-weight: normal; }
+#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 18px; font-weight: normal; }
 
 .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .aligncenter { margin: 0 auto; }
@@ -31,7 +31,7 @@ body { background: #f9f9f9; }
 
 #wrapper {
     color: #333;
-    font-family: "Lucida Grande", Helvetica, Arial, NanumGothic, NanumGothicOTF, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-family: "Lucida Grande", Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     font-size: 14px;
     line-height: 1.6em;
     margin: 0 auto;
@@ -70,7 +70,7 @@ body { background: #f9f9f9; }
 .post h2, .post h3, .post h4, .post h5 {
     color: #333;
     font-weight: 700;
-    font-family: Helvetica, Arial, NanumGothic, NanumGothicOTF, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     line-height: 1.8em;
 }
 .post h2 {
@@ -202,7 +202,7 @@ body { background: #f9f9f9; }
     color: #555;
     background: #fff;
     font-size: 14px;
-    font-family: Helvetica, Arial, NanumGothic, NanumGothicOTF, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     padding: .375em;
     border: 1px solid #e7e7e7;
 }
