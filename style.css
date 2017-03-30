@@ -53,11 +53,12 @@ body { background: #f9f9f9; }
     font-weight: 700;
 }
 #header h1 a:link, #header h1 a:visited {
-    text-shadow: 2px 2px 2px #ccc;
+    text-shadow: 2px 2px 2px #d7d7d7;
 }
 #header h1 a:hover, #header h1 a:active { }
 
-.page-header { margin: 2.6em 0 -1em 0; }
+.page-header { margin: 3em 0 -1.6em 0; }
+.page-header h1 { font-size: 1.6em; }
 .post { margin: 4.6em 0; padding: 2em 0 3em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
 .post img.attachment-post-thumbnail { float: left; margin: 0 2em 2em 0; padding: 0; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
@@ -74,21 +75,21 @@ body { background: #f9f9f9; }
     line-height: 1.8em;
 }
 .post h2 {
-    font-size: 23px;
+    font-size: 22px;
     margin-bottom: 1em;
     text-decoration: none;
 }
 /* .post h2 a:link, .post h2 a:visited { color: #333; } */
 /* .post h2 a:hover, .post h2 a:active, .post h2 a:focus { } */
-.post h3 { font-size: 18px; margin: 2em 0 0.6em 0; }
-.post h4 { font-size: 16px; margin: 1.8em 0 0.6em 0; }
-.post h5 { font-size: 13px; margin: 2em 0 1em 0; }
+.post h3 { font-size: 1.2em; margin: 2em 0 0.4em 0; }
+.post h4 { font-size: 1.1em; margin: 1.8em 0 0.4em 0; }
+.post h5 { font-size: 1em; margin: 2em 0 1em 0; }
 .post blockquote cite { font-style: normal; }
 
 .post blockquote { color: #fff; background: #878787; margin: 2em; padding: .1em 1.5em; position: relative; }
 .post blockquote cite { display: block; text-align: right; }
 
-.entry p { line-height: 1.9em; }
+.entry p { line-height: 2em; }
 
 .entry a { padding-bottom:1px; }
 .entry a:link, .entry a:visited, .comment a:link, .comment a:visited { border-bottom: 2px solid #d7d7d7; }
@@ -111,7 +112,7 @@ body { background: #f9f9f9; }
 .entry .meta {
 	color: #a7a7a7;
 	font-size: 13px;
-	margin: 3em 0 0 0;
+	margin: 3em 0 -1em 0;
 }
 .entry .meta a { border-bottom:none; }
 .entry .meta a:link, .entry .meta a:visited { color:#a7a7a7; }
@@ -231,12 +232,6 @@ p.input-submit { text-align: right }
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
-/* Plugin: Clean My Archives */
-.clean-my-archives h2 {
-    font-size: 1.4em;
-    margin: 1em 0 0.4em 0;
-}
-
 /* Smartphones landscape */
 @media (max-width: 480px) {
 	#wrapper { width: 380px; padding: 0 1em; }
@@ -256,4 +251,12 @@ p.input-submit { text-align: right }
 @media (max-width: 320px) {
 	#wrapper { width: 280px; padding: 0 0.5em; }
 	#commentform textarea  { width: 280px; }
+}
+
+/* For Plugins */
+
+/* Clean My Archives */
+.clean-my-archives h2 {
+    font-size: 1.3em;
+    margin: 1em 0 0.4em 0;
 }
