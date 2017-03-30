@@ -15,12 +15,8 @@ Text Domain: m_n
 *********************************************/
 
 p { margin: 1em 0; }
-h1 { font-size: 25px; font-weight: normal; }
-a.back { text-decoration: underline; }
-#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 18px; font-weight: normal; }
 
-.back:link, .back:visited { color: #f60; }
-.back:hover, .back:active, .back:focus { color: #3A525C; }
+#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 18px; font-weight: normal; }
 
 .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .aligncenter { margin: 0 auto; }
@@ -40,7 +36,7 @@ body { background: #f9f9f9; }
     line-height: 1.6em;
     margin: 0 auto;
     padding: 0 2em;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 #header { margin: 0 0 -1em 0; padding: 4em 0 1em 0; position: relative; }
@@ -54,16 +50,15 @@ body { background: #f9f9f9; }
 #header a { text-decoration: none; }
 #header h1 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
 }
 #header h1 a:link, #header h1 a:visited {
-    color: #333;
     text-shadow: 2px 2px 2px #ccc;
 }
 #header h1 a:hover, #header h1 a:active { }
 
 .page-header { margin: 2.6em 0 -1em 0; }
-.post { margin: 4.6em 0; padding: 2em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
+.post { margin: 4.6em 0; padding: 2em 0 3em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
 .post img.attachment-post-thumbnail { float: left; margin: 0 2em 2em 0; padding: 0; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
 .post img { max-width: 100%; height: auto; }
@@ -74,7 +69,7 @@ body { background: #f9f9f9; }
 
 .post h2, .post h3, .post h4, .post h5 {
     color: #333;
-    font-weight: 600;
+    font-weight: 700;
     font-family: Helvetica, Arial, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     line-height: 1.8em;
 }
@@ -90,11 +85,6 @@ body { background: #f9f9f9; }
 .post h5 { font-size: 13px; margin: 2em 0 1em 0; }
 .post blockquote cite { font-style: normal; }
 
-.post .number-of-comments { position: absolute; right: 1em; font-weight:600; }
-.post .number-of-comments a { font-size: 13px; }
-.post .number-of-comments a:link, .post .number-of-comments a:visited { color:#555; }
-.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color:#ff4500; }
-
 .post blockquote { color: #fff; background: #878787; margin: 2em; padding: .1em 1.5em; position: relative; }
 .post blockquote cite { display: block; text-align: right; }
 
@@ -104,27 +94,32 @@ body { background: #f9f9f9; }
 .entry a:link, .entry a:visited, .comment a:link, .comment a:visited { border-bottom: 2px solid #d7d7d7; }
 .entry a:hover, .entry a:active, .comment a:hover, .comment a:active { border-bottom: 2px solid #ff4500; }
 
-.entry .more { padding:1em 0em; }
-.entry a.more-link { font-size: 0.9em; font-weight: 600; }
-.entry a.more-link:hover, .entry a.more-link:active { }
-
 .entry ul { list-style: circle; margin-left: 1em; padding: 0 1em; }
 .entry ol { list-style: decimal; margin-left: 1em; padding: 0 1em; }
 .entry ul li, entry ol li { margin: 0.3em 0; padding:0 0 2px 0; }
 
-.entry .tags {
-    color: #a7a7a7;
-    font-size: 13px;
-    margin: 3em 0 0 0;
-}
-.entry .tags a { text-decoration: none; border-bottom:none; }
-.entry .tags a:link, .entry .tags a:visited {
-    color: #a7a7a7;
-}
-.entry .tags a:hover, .entry .tags a:active {
-    color: #ff4500;
-}
+.entry .more { padding:1em 0em; }
+.entry a.more-link { font-size: 0.9em; font-weight: 700; }
+.entry a.more-link:hover, .entry a.more-link:active { }
 
+.post .number-of-comments { position: absolute; right: 1em; font-weight:700; }
+.post .number-of-comments a { font-size: 13px; }
+.post .number-of-comments a:link, .post .number-of-comments a:visited { color:#555; }
+.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color:#ff4500; }
+
+/* Categories & Tags */
+.entry .meta {
+	color: #a7a7a7;
+	font-size: 13px;
+	margin: 3em 0 0 0;
+}
+.entry .meta a { border-bottom:none; }
+.entry .meta a:link, .entry .meta a:visited { color:#a7a7a7; }
+.entry .meta a:active, .entry .meta a:hover, .entry .meta a:focus { color:#ff4500; }
+.entry .categories { margin-right: 1em; }
+.entry .tags { margin-left: 1em; }
+
+/* Comments */
 #comments { font-size: 0.95em; }
 .comment {
     background: #f0f0f0;
@@ -143,7 +138,7 @@ body { background: #f9f9f9; }
     right: 1em;
     letter-spacing: -1px;
 }
-.comment cite { color: #888; font-style: 600; font-style: italic; }
+.comment cite { color: #888; font-weight: 700; font-style: italic; }
 .comment cite a { text-decoration: none; color:#ff4500; }
 #commentform { margin: 2.3em 0 4.6em 0; padding: 0; }
 #commentform a:link, #commentform a:visited { color: #3A525C; }
@@ -160,8 +155,8 @@ body { background: #f9f9f9; }
 
 .pagination {
     color: #555;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1.15em;
+    font-weight: 700;
     margin: -2.6em 0.4em 4.6em 0.4em;
 }
 .pagination div { float: left; margin: 0 2em 0 0; }
@@ -180,7 +175,7 @@ body { background: #f9f9f9; }
 #sb-2 { float: right; width: 45%; }
 
 #sidebar { font-size: 1em; color: #555; padding: 0 0 6em 0; margin: 3em 0 0 0; }
-#sidebar h3 { font-size: 1.15em; margin-bottom: 2px; }
+#sidebar h3 { font-size: 1.1em; margin-bottom: 3px; }
 #sidebar li { margin-bottom: 2px; }
 #sidebar a { text-decoration: none; }
 #sidebar a:link, #sidebar a:visited { color: #666; }
@@ -217,7 +212,7 @@ label { font-size: 1em; margin: 0 .5em; }
 p.input-submit { text-align: right }
 #commentform input { width: 43% }
 #commentform textarea { font-size: 1em; width: 98%; }
-#commentform #submit-comment { width: 120px; font-size: 14px; border: 0; padding: 8px; background: #3A525C; color: #fff; margin-right:10px; }
+#commentform #submit-comment { width: 120px; font-size: 14px; border: 0; padding: 8px; background: #3A525C; color: #fff; margin-right:5px; }
 #search-form #submit { padding: 1px 13px; margin: 0 0 0 5px; }
 #search h2, .emptysearch, .error { color: #888; margin:2em 0; }
 
