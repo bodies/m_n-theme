@@ -1,7 +1,8 @@
 <?php 
 function getTagList($p_id) {
     if (get_the_tags($p_id)) {
-        echo '<span class="tags">' . __('Tags: ', 'm_n');
+        // echo '<span class="tags">' . __('Tags: ', 'm_n');
+        echo '<span class="tags">'
         echo get_the_tag_list('', ', ', '', $p_id);
         echo '</span>';
     }
@@ -9,7 +10,8 @@ function getTagList($p_id) {
 
 function getCategoryList($p_id) {
     if (get_the_category($p_id)) {
-        echo '<span class="categories">'. __('Categories: ', 'm_n');
+        // echo '<span class="categories">'. __('Categories: ', 'm_n');
+        echo '<span class="categories">'
         echo get_the_category_list(', ', '', $p_id);
         echo '</span>';
     }
