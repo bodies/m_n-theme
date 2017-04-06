@@ -16,7 +16,7 @@ Text Domain: m_n
 
 p { margin: 1em 0; }
 
-#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 18px; font-weight: normal; }
+#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 1.3em; font-weight: normal; }
 
 .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .aligncenter { margin: 0 auto; }
@@ -32,7 +32,7 @@ body { background: #f9f9f9; }
 #wrapper {
     color: #333;
     font-family: "Lucida Grande", Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6em;
     margin: 0 auto;
     padding: 0 2em;
@@ -42,7 +42,7 @@ body { background: #f9f9f9; }
 #header { margin: 0 0 -1em 0; padding: 4em 0 1em 0; position: relative; }
 #header .description {
     color: #c7c7c7;
-    font-size: 14px;
+    font-size: 1em;
     margin: 0.8em 0 0 0;
     padding: 0 0 0 2px;
     letter-spacing: 3px;
@@ -66,7 +66,7 @@ body { background: #f9f9f9; }
 .post img.alignright { float: right; margin: 0 1em 1em 1em; }
 .post img.alignleft { float: left; margin: 0 1em 1em 1em ; }
 .post .vvqbox { margin: 2em auto; }
-.post .date { color: #c7c7c7; font-size: 12px; position: absolute; top: 0; right: 10px; }
+.post .date { color: #c7c7c7; font-size: 0.85em; position: absolute; top: 0; right: 10px; }
 
 .post h2, .post h3, .post h4, .post h5 {
     color: #333;
@@ -75,22 +75,22 @@ body { background: #f9f9f9; }
     line-height: 1.8em;
 }
 .post h2 {
-    font-size: 22px;
+    font-size: 1.6em;
     margin-bottom: 1em;
     text-decoration: none;
 }
 /* .post h2 a:link, .post h2 a:visited { color: #333; } */
 /* .post h2 a:hover, .post h2 a:active, .post h2 a:focus { } */
 .post h3 { font-size: 1.2em; margin: 2em 0 0.4em 0; }
-.post h4 { font-size: 1.1em; margin: 1.8em 0 0.4em 0; }
+.post h4 { font-size: 1.1em; margin: 1.8em 0 -0.4em 0; }
 .post h5 { font-size: 1em; margin: 2em 0 1em 0; }
 .post blockquote cite { font-style: normal; }
 
 .post blockquote { color: #fff; background: #878787; margin: 2em; padding: .1em 1.5em; position: relative; }
 .post blockquote cite { display: block; text-align: right; }
 
+.entry { margin-bottom:1em; }
 .entry p { line-height: 2em; }
-
 .entry a { padding-bottom:1px; }
 .entry a:link, .entry a:visited, .comment a:link, .comment a:visited { border-bottom: 2px solid #d7d7d7; }
 .entry a:hover, .entry a:active, .comment a:hover, .comment a:active { border-bottom: 2px solid #ff4500; }
@@ -99,19 +99,19 @@ body { background: #f9f9f9; }
 .entry ol { list-style: decimal; margin-left: 1em; padding: 0 1em; }
 .entry ul li, entry ol li { margin: 0.3em 0; padding:0 0 2px 0; }
 
-.entry .more { padding:1em 0em; }
+.entry .more { padding:5px 0; }
 .entry a.more-link { font-size: 0.9em; font-weight: 700; }
 .entry a.more-link:hover, .entry a.more-link:active { }
 
 .post .number-of-comments { position: absolute; right: 1em; font-weight:700; }
-.post .number-of-comments a { font-size: 13px; }
+.post .number-of-comments a { font-size: 0.9em; }
 .post .number-of-comments a:link, .post .number-of-comments a:visited { color:#555; }
 .post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color:#ff4500; }
 
 /* Categories & Tags */
 .entry .meta {
 	color: #a7a7a7;
-	font-size: 13px;
+	font-size: 0.85em;
 	margin: 3em 0 -1em 0;
 }
 .entry .meta a { border-bottom:none; }
@@ -131,23 +131,23 @@ body { background: #f9f9f9; }
     border: 1px solid #e7e7e7;
 }
 .comment .date {
-    color: #c7c7c7;
-    font-size: 12px;
+    color: #a7a7a7;
+    font-size: 0.8em;
     font-weight: normal;
     bottom: 1em;
     position: absolute;
-    right: 1em;
+    right: 1.6em;
     letter-spacing: -1px;
 }
-.comment cite { color: #888; font-weight: 700; font-style: italic; }
-.comment cite a { text-decoration: none; color:#ff4500; }
+.comment cite { color:#666; font-weight:700; font-style:italic; }
+.comment cite a { text-decoration: none; }
 #commentform { margin: 2.3em 0 4.6em 0; padding: 0; }
 #commentform a:link, #commentform a:visited { color: #3A525C; }
 #commentform a:hover, #commentform a:active, #commentform a:focus { color:#ff4500; }
 
 #comments h3 { margin: 0 0 2em 0; font-size: 18px; }
 #commentform h3 { margin: 0 0 25px 0; }
-#commentform p { font-size: 13px }
+#commentform p { font-size: 0.9em; }
 
 #comments h3, #commentform h3 { color: #555; }
 .highlighted { border: 1px solid #e7e7e7;  }
@@ -175,7 +175,7 @@ body { background: #f9f9f9; }
 #sb-1 { float: left; width: 45%; }
 #sb-2 { float: right; width: 45%; }
 
-#sidebar { font-size: 1em; color: #555; padding: 0 0 6em 0; margin: 3em 0 0 0; }
+#sidebar { font-size: 0.95em; color: #555; padding: 0 0 6em 0; margin: 3em 0 0 0; }
 #sidebar h3 { font-size: 1.1em; margin-bottom: 3px; }
 #sidebar li { margin-bottom: 2px; }
 #sidebar a { text-decoration: none; }
@@ -186,7 +186,7 @@ body { background: #f9f9f9; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
 #sidebar .cat-item { color: #ccc; }
 
-#footer { color: #ccc; padding: 1em 0; font-size: 11px; }
+#footer { color: #ccc; padding: 1em 0; font-size: 0.8em; }
 #footer p { margin: 0; }
 
 #footer a { text-decoration: none; }
@@ -202,7 +202,7 @@ body { background: #f9f9f9; }
 .input-text, textarea {
     color: #555;
     background: #fff;
-    font-size: 14px;
+    font-size: 1em;
     font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     padding: .375em;
     border: 1px solid #e7e7e7;
@@ -213,7 +213,7 @@ label { font-size: 1em; margin: 0 .5em; }
 p.input-submit { text-align: right }
 #commentform input { width: 43% }
 #commentform textarea { font-size: 1em; width: 98%; }
-#commentform #submit-comment { width: 120px; font-size: 14px; border: 0; padding: 8px; background: #3A525C; color: #fff; margin-right:5px; }
+#commentform #submit-comment { width: 120px; font-size: 1em; border: 0; padding: 8px; background: #3A525C; color: #fff; margin-right:5px; }
 #search-form #submit { padding: 1px 13px; margin: 0 0 0 5px; }
 #search h2, .emptysearch, .error { color: #888; margin:2em 0; }
 
