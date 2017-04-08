@@ -14,7 +14,7 @@ Text Domain: m_n
 	font-family: "Lucida Grande", Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, "Malgun Gothic", sans-serif;
 }
 
-p { margin: 1em; }
+p { margin: 1em 0; }
 a:link, a:visited { color:#333; }
 a:active, a:hover, a:focus { color:#ff4500; }
 
@@ -30,12 +30,12 @@ body {
 
 #wrapper {
     margin: 20px auto;
-    padding: 0 120px;
+    padding: 0 110px;
     max-width: 600px;
 	background-color: #f9f9f9;
 }
 
-#header { margin: 0 0 -1em 0; padding: 4em 0 1em 0; position: relative; }
+#header { margin: 0 0 -1em 0; padding: 5em 0 1em 0; position: relative; }
 #header .description {
     color: #c7c7c7;
     font-size: 1em;
@@ -44,7 +44,7 @@ body {
     letter-spacing: 2px;
 }
 #header a { text-decoration: none; }
-#header h1 {  font-size: 32px; font-weight: 700; }
+#header h1 { font-size: 2.2em; font-weight: 700; }
 #header h1 a:link, #header h1 a:visited {
     text-shadow: 2px 2px 2px #d7d7d7;
 }
@@ -53,7 +53,7 @@ body {
 .page-header { margin: 3em 0 -1.6em 0; }
 .page-header h1 { font-size: 1.6em; }
 
-.post { margin: 4.6em 0; padding: 2em 0 3em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
+.post { margin: 4em 0; padding: 2em 0 3em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
 .post img.attachment-post-thumbnail { float: left; margin: 0 2em 2em 0; padding: 0; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
 .post img { max-width: 100%; height: auto; }
@@ -62,14 +62,14 @@ body {
 .post img.aligncenter { margin: 0 auto; }
 .post .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .post .vvqbox { margin: 2em auto; }
-.post .date { color: #c7c7c7; font-size: 0.8em; position: absolute; top: 0; right: 10px; }
+.post .date { color: #c7c7c7; font-size: 0.8em; font-style: italic;  position: absolute; top: 0; right: 10px; }
 
 .post h2, .post h3, .post h4, .post h5 {
     color: #333;
     font-weight: 700;
     line-height: 1.8em;
 }
-.post h2 { font-size: 1.6em; margin-bottom: 1em; text-decoration: none; }
+.post h2 { font-size: 1.6em; margin: 0.5em 0 1em 0; text-decoration: none; }
 .post h3 { font-size: 1.2em; margin: 2em 0 0.4em 0; }
 .post h4 { font-size: 1.1em; margin: 1.8em 0 -0.4em 0; }
 .post h5 { font-size: 1em; margin: 2em 0 1em 0; }
@@ -99,12 +99,12 @@ body {
 
 /* Categories & Tags */
 .entry .meta {
-	color: #a7a7a7;
-	font-size: 0.85em;
+	color: #c7c7c7;
+	font-size: 0.9em;
 	margin: 3em 0 -1em 0;
 }
 .entry .meta a { border-bottom:none; }
-.entry .meta a:link, .entry .meta a:visited { color:#a7a7a7; }
+.entry .meta a:link, .entry .meta a:visited { color:#c7c7c7; }
 .entry .meta a:active, .entry .meta a:hover, .entry .meta a:focus { color:#ff4500; }
 .entry .categories { margin-right: 3px; }
 .entry .tags { margin-left: 3px; }
