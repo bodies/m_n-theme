@@ -2,7 +2,7 @@
 Theme Name: m_n
 Theme URI: https://github.com/bodies/m_n-theme
 Description: A simple, one column theme, derived from "min." by Jared Erickssen.
-Version: 1.0
+Version: 1.1
 Author: Y. Jeong
 Author URI: http//nodance.net/
 Text Domain: m_n
@@ -10,33 +10,29 @@ Text Domain: m_n
 
 @import "css/reset.css";
 
-/********************************************
-	Typography
-*********************************************/
+* {
+	font-family: "Lucida Grande", Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, "Malgun Gothic", sans-serif;
+}
 
-p { margin: 1em 0; }
-
-#search h2, #comments h3, #commentform h3, .emptysearch, .error { font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 1.3em; font-weight: normal; }
-
-.wp-caption { color: #888; font-size: 0.8em; text-align: center; }
-.aligncenter { margin: 0 auto; }
-
+p { margin: 1em; }
 a:link, a:visited { color:#333; }
 a:active, a:hover, a:focus { color:#ff4500; }
 
-/********************************************
-	Layout
-*********************************************/
-body { background: #f9f9f9; }
+
+/* --- Main --- */
+
+body {
+	color: #333;
+	background: #444;
+	font-size: 15px;
+	line-height: 1.6em;
+}
 
 #wrapper {
-    color: #333;
-    font-family: "Lucida Grande", Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-    font-size: 15px;
-    line-height: 1.6em;
-    margin: 0 auto;
-    padding: 0 2em;
+    margin: 20px auto;
+    padding: 0 120px;
     max-width: 600px;
+	background-color: #f9f9f9;
 }
 
 #header { margin: 0 0 -1em 0; padding: 4em 0 1em 0; position: relative; }
@@ -45,13 +41,10 @@ body { background: #f9f9f9; }
     font-size: 1em;
     margin: 0.8em 0 0 0;
     padding: 0 0 0 2px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 #header a { text-decoration: none; }
-#header h1 {
-    font-size: 32px;
-    font-weight: 700;
-}
+#header h1 {  font-size: 32px; font-weight: 700; }
 #header h1 a:link, #header h1 a:visited {
     text-shadow: 2px 2px 2px #d7d7d7;
 }
@@ -59,35 +52,36 @@ body { background: #f9f9f9; }
 
 .page-header { margin: 3em 0 -1.6em 0; }
 .page-header h1 { font-size: 1.6em; }
+
 .post { margin: 4.6em 0; padding: 2em 0 3em 0; position: relative; border-bottom: 1px solid #f0f0f0; word-break: break-all; }
 .post img.attachment-post-thumbnail { float: left; margin: 0 2em 2em 0; padding: 0; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
 .post img { max-width: 100%; height: auto; }
-.post img.alignright { float: right; margin: 0 1em 1em 1em; }
 .post img.alignleft { float: left; margin: 0 1em 1em 1em ; }
+.post img.alignright { float: right; margin: 0 1em 1em 1em; }
+.post img.aligncenter { margin: 0 auto; }
+.post .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .post .vvqbox { margin: 2em auto; }
-.post .date { color: #c7c7c7; font-size: 0.85em; position: absolute; top: 0; right: 10px; }
+.post .date { color: #c7c7c7; font-size: 0.8em; position: absolute; top: 0; right: 10px; }
 
 .post h2, .post h3, .post h4, .post h5 {
     color: #333;
     font-weight: 700;
-    font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
     line-height: 1.8em;
 }
-.post h2 {
-    font-size: 1.6em;
-    margin-bottom: 1em;
-    text-decoration: none;
-}
-/* .post h2 a:link, .post h2 a:visited { color: #333; } */
-/* .post h2 a:hover, .post h2 a:active, .post h2 a:focus { } */
+.post h2 { font-size: 1.6em; margin-bottom: 1em; text-decoration: none; }
 .post h3 { font-size: 1.2em; margin: 2em 0 0.4em 0; }
 .post h4 { font-size: 1.1em; margin: 1.8em 0 -0.4em 0; }
 .post h5 { font-size: 1em; margin: 2em 0 1em 0; }
-.post blockquote cite { font-style: normal; }
 
+.post blockquote cite { font-style: normal; }
 .post blockquote { color: #fff; background: #878787; margin: 2em; padding: .1em 1.5em; position: relative; }
 .post blockquote cite { display: block; text-align: right; }
+
+.post .number-of-comments { position: absolute; right: 1em; font-weight:700; }
+.post .number-of-comments a { font-size: 0.9em; }
+.post .number-of-comments a:link, .post .number-of-comments a:visited { color:#555; }
+.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color:#ff4500; }
 
 .entry { margin-bottom:1em; }
 .entry p { line-height: 2em; }
@@ -102,11 +96,6 @@ body { background: #f9f9f9; }
 .entry .more { padding:5px 0; }
 .entry a.more-link { font-size: 0.9em; font-weight: 700; }
 .entry a.more-link:hover, .entry a.more-link:active { }
-
-.post .number-of-comments { position: absolute; right: 1em; font-weight:700; }
-.post .number-of-comments a { font-size: 0.9em; }
-.post .number-of-comments a:link, .post .number-of-comments a:visited { color:#555; }
-.post .number-of-comments a:hover, .post .number-of-comments a:active, .post .number-of-comments a:focus { color:#ff4500; }
 
 /* Categories & Tags */
 .entry .meta {
@@ -176,8 +165,8 @@ body { background: #f9f9f9; }
 #sb-2 { float: right; width: 45%; }
 
 #sidebar { font-size: 0.95em; color: #555; padding: 0 0 6em 0; margin: 3em 0 0 0; }
-#sidebar h3 { font-size: 1.1em; margin-bottom: 3px; }
-#sidebar li { margin-bottom: 2px; }
+#sidebar h3 { font-size: 1.15em; margin-bottom: 4px; }
+#sidebar li { margin: 0 0 4px 1px; }
 #sidebar a { text-decoration: none; }
 #sidebar a:link, #sidebar a:visited { color: #666; }
 #sidebar a:hover, #sidebar a:active, #sidebar a:focus { color:#ff4500; }
@@ -185,25 +174,22 @@ body { background: #f9f9f9; }
 #sidebar .tagcloud { width:95%; }
 #sidebar #rss li { background: url(../img/ico-rss.jpg) left center no-repeat; padding: 0; margin: .5em 0; }
 #sidebar .cat-item { color: #ccc; }
+.footer-widget { margin-bottom: 1.5em; }
 
-#footer { color: #ccc; padding: 1em 0; font-size: 0.8em; }
+#footer { color: #c7c7c7; padding: 1em 0 1.6em 0; font-size: 0.8em; text-align:center; }
 #footer p { margin: 0; }
-
 #footer a { text-decoration: none; }
 #footer a:link, #footer a:visited { color: #c7c7c7; }
 #footer a:hover, #footer a:active, #footer a:focus { color:#ff4500; }
 
-.footer-widget { margin-bottom: 1.5em; }
 
-/********************************************
-	Form Styles
-*********************************************/
+/* --- Forms --- */
 
 .input-text, textarea {
     color: #555;
     background: #fff;
     font-size: 1em;
-    font-family: Helvetica, Arial, NanumGothicOTF, NanumGothic, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-family: Helvetica, Arial, "Apple SD Gothic Neo", NanumGothic, "Malgun Gothic", sans-serif;
     padding: .375em;
     border: 1px solid #e7e7e7;
 }
@@ -232,7 +218,9 @@ p.input-submit { text-align: right }
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
-/* Smartphones landscape */
+
+/* --- For Mobile --- */
+
 @media (max-width: 480px) {
 	#wrapper { width: 380px; padding: 0 1em; }
 	#commentform textarea  { width: 380px; }
@@ -253,7 +241,8 @@ p.input-submit { text-align: right }
 	#commentform textarea  { width: 280px; }
 }
 
-/* For Plugins */
+
+/* --- For Plugins --- */
 
 /* Clean My Archives */
 .clean-my-archives h2 {
