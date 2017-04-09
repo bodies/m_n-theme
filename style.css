@@ -57,9 +57,9 @@ body {
 .post img.attachment-post-thumbnail { float: left; margin: 0 2em 2em 0; padding: 0; }
 .post img, .post object, .post embed { display: block; margin: 0 auto 0.8em auto; }
 .post img { max-width: 100%; height: auto; }
-.post img.alignleft { float: left; margin: 0 1em 1em 1em ; }
-.post img.alignright { float: right; margin: 0 1em 1em 1em; }
-.post img.aligncenter { margin: 0 auto; }
+.post alignleft { float: left; margin: 0 1em 1em 1em ; }
+.post alignright { float: right; margin: 0 1em 1em 1em; }
+.post aligncenter { margin: 0 auto; }
 .post .wp-caption { color: #888; font-size: 0.8em; text-align: center; }
 .post .vvqbox { margin: 2em auto; }
 .post .date { color: #c7c7c7; font-size: 0.8em; font-style: italic;  position: absolute; top: 0; right: 10px; }
@@ -221,24 +221,44 @@ p.input-submit { text-align: right }
 
 /* --- For Mobile --- */
 
+@media (max-width: 840px) {
+	#wrapper { padding:0 80px; }
+}
+
+@media (max-width: 800px) {
+	#wrapper { padding:0 50px; }
+}
+
+@media (max-width: 730px) {
+	#wrapper { padding:0 40px; width:520px; }
+}
+
+@media (max-width: 620px) {
+	#wrapper { padding:0 30px; width:460px; }
+}
+
 @media (max-width: 480px) {
-	#wrapper { width: 380px; padding: 0 1em; }
-	#commentform textarea  { width: 380px; }
+	#wrapper { width: 420px; padding: 0 20px; margin-top:15px; }
+	#commentform textarea  { width: 410px; }
 	#search-form #submit { padding:1px 3px; margin-left: 2px; }
 	#search-form .input-text { max-width:50%; }
 	#sb-1 { width: 42%; }
 	#sb-2 { width: 42%; }
 }
 
+@media (max-width: 420px) {
+	#wrapper { width:360px; padding: 0 17px; }
+	#commentform textarea { width: 350px; }
+}
+
 @media (max-width: 380px) {
-	#wrapper { width:320px; padding: 0 0.8em; }
+	#wrapper { width:330px; padding: 0 15px; margin-top:10px; }
 	#commentform textarea { width: 320px; }
 }
 
-/* Smartphones horizontile */
 @media (max-width: 320px) {
-	#wrapper { width: 280px; padding: 0 0.5em; }
-	#commentform textarea  { width: 280px; }
+	#wrapper { width: 270px; padding: 0 15px; }
+	#commentform textarea  { width: 270px; }
 }
 
 
